@@ -28,7 +28,7 @@ jobs:
     users : actions/checkout@v2
     -name : Setup Python
     users : actions/setup-python@v2
-     with :
+    with :
       python-version : '3.x'
     -name : Run program
-     run : python app.py
+    run : python app.py
