@@ -11,12 +11,7 @@ def test_fizzbuzz():
     assert fizzbuzz(4) == 4
     assert fizzbuzz(5) == 'buzz'
     assert fizzbuzz(6) == 'fizz'
-    assert fizzbuzz(7) == 7
+    assert fizzbuzz(7) == 'github'
     assert fizzbuzz(8) == 8
     assert fizzbuzz(9) == 'fizz'
     assert fizzbuzz(10) == 'buzz'
-    assert fizzbuzz(11) == 11
-    assert fizzbuzz(12) == 'fizz'
-    assert fizzbuzz(13) == 13
-    assert fizzbuzz(14) == 14
-    assert fizzbuzz(15) == 'fizzbuzz'
