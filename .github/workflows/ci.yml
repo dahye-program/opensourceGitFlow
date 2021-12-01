@@ -10,25 +10,25 @@ jobs:
     name : Test Program
     runs-on : ubuntu-lastest
     steps :
-    -name : Checkout
-    users : actions/checkout@v2
-    -name : Setup Python
-    users : actions/setup-python@v2
-    with :
-      python-version : '3.x'
-    -name : Install pytest
-    run : pip install pytest
-    -name : Run test cases
-    run : pytest tests
+      -name : Checkout
+       uses : actions/checkout@v2
+      -name : Setup Python
+       uses : actions/setup-python@v2
+       with :
+         python-version : '3.x'
+      -name : Install pytest
+       run : pip install pytest
+      -name : Run test cases
+       run : pytest tests/test.py
   run-program:
     needs : [test-program]
     runs-on : ubuntu-latest
     steps :
-    -name : Checkout
-    users : actions/checkout@v2
-    -name : Setup Python
-    users : actions/setup-python@v2
-    with :
-      python-version : '3.x'
-    -name : Run program
-    run : python app.py
+      -name : Checkout
+       uses : actions/checkout@v2
+      -name : Setup Python
+       uses : actions/setup-python@v2
+       with :
+         python-version : '3.x'
+      -name : Run program
+       run : python app.py
