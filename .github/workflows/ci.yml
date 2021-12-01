@@ -27,7 +27,7 @@ jobs:
     -name : Checkout
     users : actions/checkout@v2
     -name : Setup Python
-     users : actions/setup-python@v2
+    users : actions/setup-python@v2
      with :
       python-version : '3.x'
     -name : Run program
