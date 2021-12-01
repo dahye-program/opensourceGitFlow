@@ -25,7 +25,7 @@ jobs:
     runs-on : ubuntu-latest
     steps :
     -name : Checkout
-     users : actions/checkout@v2
+    users : actions/checkout@v2
     -name : Setup Python
      users : actions/setup-python@v2
      with :
